@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <!-- JS -->
+
+    <script type="text/javascript">
+
+      //JS Pokemon ID
+
+      function readID(event) {
+
+        event.preventDefault();
+
+        let element = document.querySelector("#id");
+
+        fetch("/id/" + element.value).then ((res) => {
+          return res.json();
+        }).then((processed) => {
+
+          let reporting = document.querySelector("#reportingArea");
+
+          if(processed.error) {
+            reporting.innerHTML = "This ID is inavlid!";
+          } else {
+            reporting.innerHTML = processed.name;
+          }
+        });
+      }
+
+      //JS Pokemon Name
+
+      function readName(event) {
+
+        event.preventDefault();
+
+        let element = document.querySelector("#name");
+
+        fetch("/name/" + element.value).then ((res) => {
+          return res.json();
+        }).then((processed) => {
+
+          let reporting = document.querySelector("#reportingArea");
+
+          if(processed.error) {
+            reporting.innerHTML = "This name is inavlid!";
+          } else {
+            reporting.innerHTML = processed.id;
+          }
+        });
+      }
+
+    </script>
+
+    <!-- Forms  -->
+
+    <h1>Pokemon ID</h1>
+      <form onsubmit="readID(event)">
+        <input type="text" id="id">
+        <button>Submit</button>
+      </form>
+
+    <h1>Pokemon Name</h1>
+      <form onsubmit="readName(event)">
+        <input type="text" id="name">
+        <button>Submit</button>
+      </form>
+    <h1>Reporting Area</h1>
+      <div id="reportingArea"></div>
+  </body>
+</html>
