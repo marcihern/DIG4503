@@ -1,0 +1,82 @@
+.body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header2 {
+  text-align: center;
+  font-size: 50px;
+  color: #c91010;
+}
+
+.header5 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.paragraph {
+  text-align: center;
+  font-size: 20px;
+}
+
+.container {
+  display: grid;
+  grid-gap: 100px;
+  grid-template-columns: auto auto auto;
+  padding: 40px;
+}
+
+.link {
+  border: 5px solid #c91010;
+  background-color: #c91010;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  border: 5px solid lightgrey;
+  background-color: lightgrey;
+  color: #c91010;
+  font-weight: 500;
+}
+
+.otherLink {
+  text-decoration: none;
+  color: #c91010;
+}
+
+.nameSearch {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: #c91010;
+}
+
+.input {
+ width: 240px;
+ height: 50px;
+ border: 1px solid #c91010;
+ font-size: 25px;
+ font-weight: 300;
+}
+
+.button {
+  width: 157px;
+  background-color: #c91010;
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.button:hover {
+  background-color: lightgrey;
+  color: #c91010;
+  font-weight: 300;
+}
