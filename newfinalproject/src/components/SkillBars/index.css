@@ -1,0 +1,114 @@
+.skillbars {
+  width: 500px;
+  margin: 50px auto 0;
+}
+
+#list {
+  position: relative;
+  list-style: none;
+  margin: 50px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#list:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: #B0C8BE;
+  border-radius: 1000px;
+}
+
+#list:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: #95ACA4;
+  border-radius: 1000px;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+/* Illustrator */
+#list.ai:after {
+  animation-name: ai;
+}
+
+@keyframes ai {
+  to {
+    width: 90%;
+  }
+}
+
+/* Photoshop */
+#list.ps:after {
+  animation-name: ps;
+}
+
+@keyframes ps {
+  to {
+    width: 70%;
+  }
+}
+
+/* XD */
+#list.xd:after {
+  animation-name: xd;
+}
+
+@keyframes xd {
+  to {
+    width: 60%;
+  }
+}
+
+/* HTML */
+#list.html:after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+    width: 80%;
+  }
+}
+
+/* CSS */
+#list.css:after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+    width: 70%;
+  }
+}
+
+/* JavaScript */
+#list.js:after {
+  animation-name: js;
+}
+
+@keyframes js {
+  to {
+    width: 40%;
+  }
+}
+
+/* React */
+#list.react:after {
+  animation-name: react;
+}
+
+@keyframes react {
+  to {
+    width: 30%;
+  }
+}
